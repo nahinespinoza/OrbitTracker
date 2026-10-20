@@ -1,0 +1,26 @@
+@import '@fontsource/orbitron/600.css';
+@import '@fontsource/orbitron/800.css';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/700.css';
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Orbitron', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --color-space: #0b0f19;
+  --color-neon-cyan: #22d3ee;
+  --color-neon-green: #4ade80;
+  --color-neon-red: #f43f5e;
+}
+
+html, body, #root { height: 100%; margin: 0; }
+body { background: #0b0f19; color: #cbd5e1; font-family: var(--font-mono); overflow: hidden; }
+
+/* Panel de cristal reutilizable */
+.glass {
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 24px rgba(34, 211, 238, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+.glow-cyan { text-shadow: 0 0 10px rgba(34, 211, 238, 0.7); }
