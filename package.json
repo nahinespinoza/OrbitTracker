@@ -18,7 +18,7 @@
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "satellite.js": "^7.1.0",
-    "three": "^0.186.1"
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
