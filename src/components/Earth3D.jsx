@@ -54,9 +54,9 @@ const atmoFrag = /* glsl */ `
 
 function Earth({ gmstRef, sunDirRef }) {
   const [day, night, spec] = useLoader(THREE.TextureLoader, [
-    '/textures/earth_atmos_2048.jpg',
-    '/textures/earth_lights_2048.png',
-    '/textures/earth_specular_2048.jpg',
+    `${import.meta.env.BASE_URL}textures/earth_atmos_2048.jpg`,
+    `${import.meta.env.BASE_URL}textures/earth_lights_2048.png`,
+    `${import.meta.env.BASE_URL}textures/earth_specular_2048.jpg`,
   ])
   day.colorSpace = night.colorSpace = THREE.SRGBColorSpace
   day.anisotropy = 8
